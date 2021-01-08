@@ -35,9 +35,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "node_modules/tslint/bin/tslint -c tslint.json 'src/**/*.ts'",
-    "lint-fix": "node_modules/tslint/bin/tslint --fix -c tslint.json 'src/**/*.ts'",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "lint-fix": "node_modules/tslint/bin/tslint --fix -c tslint.json 'src/**/*.ts'"
   },
   "eslintConfig": {
     "extends": "react-app"
