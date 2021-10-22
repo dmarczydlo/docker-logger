@@ -27,7 +27,7 @@
     "redux-thunk": "^2.3.0",
     "terminal-in-react": "^4.3.1",
     "typescript": "3.5.3",
-    "snyk": "^1.437.3"
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,7 +35,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "node_modules/tslint/bin/tslint -c tslint.json 'src/**/*.ts'",
-    "lint-fix": "node_modules/tslint/bin/tslint --fix -c tslint.json 'src/**/*.ts'"
+    "lint-fix": "node_modules/tslint/bin/tslint --fix -c tslint.json 'src/**/*.ts'",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
